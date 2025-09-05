@@ -15,7 +15,7 @@ const Footer = () => {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="text-center md:text-left">
               <p className="text-muted-foreground">
-                © "2025" Om Patel.
+                © 2025 Om Patel | All Rights Reserved.
               </p>
             </div>
             

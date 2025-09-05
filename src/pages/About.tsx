@@ -63,20 +63,20 @@ const About = () => {
             <h2 className="text-3xl font-bold mb-6 text-gradient">My Story</h2>
             <div className="space-y-6 text-lg text-muted-foreground leading-relaxed">
               <p>
-                With over 5 years of experience in backend development, I specialize in building 
-                high-performance web applications using <span className="text-primary font-semibold">Python and Django</span>. 
-                My passion lies in creating clean, efficient code that solves real-world problems.
-              </p>
-              <p>
-                I have extensive experience with database design, API development, 
-                system architecture, and cloud deployment. I believe in writing code 
-                that is not only functional but also <span className="text-accent font-semibold">maintainable and scalable</span>.
+                I'm Aspiring backend developer with good experience in Python and Django, aiming to contribute to build robust and scalable 
+                web solutions while growing with a progressive organization. Passionate about learning new technologies, improving coding 
+								efficiency, solving real-world problems. Eager to collaborate in teams to deliver high-quality software applications.
               </p>
               <p>
                 My approach combines technical expertise with business understanding, 
                 ensuring that every solution I build contributes meaningfully to 
                 organizational goals and user satisfaction.
               </p>
+              <p>
+								When I'm not trying to build, learning and thinking
+								about how to make things better 😉,  you can catch me watching or playing
+								cricket matches 🏏.
+							</p>
             </div>
           </div>
 
@@ -85,13 +85,14 @@ const About = () => {
             <h3 className="text-3xl font-bold mb-6 text-gradient-alt">Education</h3>
             <div className="space-y-6">
               <div className="border-l-4 border-primary pl-6">
-                <h4 className="text-xl font-semibold text-foreground mb-2">Bachelor of Computer Science</h4>
-                <p className="text-accent font-medium mb-2">University of Technology</p>
-                <p className="text-muted-foreground">2016 - 2020</p>
+                <h4 className="text-xl font-semibold text-foreground mb-2">B.E. in Information Technology</h4>
+                <p className="text-accent font-medium mb-2">SAL Engineering and Technical Institute</p>
+                <p className="text-muted-foreground">2022 - Present</p>
                 <p className="text-muted-foreground mt-2">
                   Specialized in software engineering with focus on backend systems, database management, 
-                  and distributed computing. Graduated with honors.
+                  and distributed computing. 
                 </p>
+                <p className="text-primary font-medium"> CGPA: 8.41 </p>
               </div>
             </div>
           </div>

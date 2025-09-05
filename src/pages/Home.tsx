@@ -46,17 +46,14 @@ const Home = () => {
                 
                 <div className="text-lg sm:text-xl lg:text-2xl text-muted-foreground">
                   <span className="inline-block">Crafting robust </span>
-                  <span className="text-primary font-semibold">Python</span>
-                  <span className="inline-block"> & </span>
-                  <span className="text-accent font-semibold">Django</span>
-                  <span className="inline-block"> solutions</span>
+                  <span className="text-primary font-semibold"> Python </span>
+                  <span className="inline-block">  & </span>
+                  <span className="text-accent font-semibold"> Django </span>
+                  <span className="inline-block">  solutions</span>
                 </div>
                 
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  I architect and build <span className="text-primary font-medium">scalable backend systems</span>, 
-                  <span className="text-accent font-medium"> robust APIs</span>, and 
-                  <span className="text-foreground font-medium"> high-performance databases</span> that power 
-                  the next generation of web applications.
+                  I design and build <span className="text-primary font-medium"> scalable backend systems </span> using Python and Django. My work focuses on creating <span className="text-foreground font-medium"> robust APIs and high-performance databases </span> that ensure smooth and reliable web applications. With clean coding practices and a focus on efficiency, I develop solutions that are secure, maintainable, and ready to scale with future growth.
                 </p>
               </div>
 
@@ -78,8 +75,14 @@ const Home = () => {
                   size="lg"
                   className="w-full sm:w-auto px-8 py-3 text-lg font-medium hover:scale-105 transition-all duration-300"
                 >
+                  <a
+                     href="/resume.pdf"
+                    download="Om_Patel_Resume.pdf"   // file name when downloaded
+                    className="flex items-center"
+                >
                   <Download className="h-5 w-5 mr-2" />
                   Download Resume
+                  </a>
                 </Button>
                 
                 <Link to="/contact" className="w-full sm:w-auto">
@@ -96,28 +99,51 @@ const Home = () => {
 
               {/* Social links */}
               <div className="flex items-center justify-center lg:justify-start gap-4 pt-4">
-                <Button 
-                  variant="ghost" 
-                  size="lg" 
-                  className="hover:text-primary transition-all duration-300 hover:scale-110"
-                >
-                  <Github className="h-6 w-6" />
-                </Button>
-                <Button 
-                  variant="ghost" 
-                  size="lg" 
-                  className="hover:text-accent transition-all duration-300 hover:scale-110"
-                >
-                  <Linkedin className="h-6 w-6" />
-                </Button>
-                <Button 
-                  variant="ghost" 
-                  size="lg" 
-                  className="hover:text-primary transition-all duration-300 hover:scale-110"
-                >
-                  <Mail className="h-6 w-6" />
-                </Button>
-              </div>
+  <Button
+    asChild
+    variant="ghost"
+    size="lg"
+    className="hover:text-primary transition-all duration-300 hover:scale-110"
+  >
+    <a
+      href="https://github.com/dashboard"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Github className="h-6 w-6" />
+    </a>
+  </Button>
+
+  <Button
+    asChild
+    variant="ghost"
+    size="lg"
+    className="hover:text-accent transition-all duration-300 hover:scale-110"
+  >
+    <a
+      href="https://www.linkedin.com/in/om-patel0309/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Linkedin className="h-6 w-6" />
+    </a>
+  </Button>
+
+  <Button
+    asChild
+    variant="ghost"
+    size="lg"
+    className="hover:text-primary transition-all duration-300 hover:scale-110"
+  >
+    <a
+      href="mailto:221260116035setiit@gmail.com"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <Mail className="h-6 w-6" />
+    </a>
+  </Button>
+</div>
             </div>
 
             {/* Desktop - Photo on right */}
