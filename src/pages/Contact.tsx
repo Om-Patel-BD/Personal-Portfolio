@@ -11,21 +11,20 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       value: "om.patel@email.com",
-      href: "mailto:om.patel@email.com",
+      href: "mailto:221260116035setiit@gmail.com",
       description: "Best way to reach me for projects"
     },
     {
       icon: Phone,
       label: "Phone",
-      value: "+1 (555) 123-4567",
-      href: "tel:+15551234567",
+      value: "+91 9104564585",
+      href: "tel:+919104564585",
       description: "Available during business hours"
     },
     {
       icon: MapPin,
       label: "Location",
-      value: "San Francisco, CA",
-      href: "#",
+      value: "Gujarat, India",
       description: "Open to remote opportunities"
     }
   ]
@@ -34,7 +33,7 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/ompatel",
+      href: "https://github.com/dashboard",
       username: "@ompatel",
       description: "Check out my open source projects",
       color: "hover:text-neon-cyan"
@@ -42,7 +41,7 @@ const Contact = () => {
     {
       icon: Linkedin,
       label: "LinkedIn",
-      href: "https://linkedin.com/in/ompatel",
+      href: "https://www.linkedin.com/in/om-patel0309/",
       username: "/in/ompatel",
       description: "Professional network and experience",
       color: "hover:text-neon-blue"
@@ -50,19 +49,14 @@ const Contact = () => {
     {
       icon: Twitter,
       label: "Twitter",
-      href: "https://twitter.com/ompatel",
+      href: "https://x.com/aum_393?s=11",
       username: "@ompatel",
       description: "Tech thoughts and industry insights",
       color: "hover:text-neon-purple"
     }
   ]
 
-  const availabilityStatus = {
-    status: "Available",
-    message: "Currently accepting new projects",
-    responseTime: "Within 24 hours",
-    color: "text-neon-green"
-  }
+  
 
   return (
     <div className="min-h-screen pt-24 pb-20 relative overflow-hidden">
@@ -90,19 +84,7 @@ const Contact = () => {
             </p>
           </div>
 
-          {/* Availability Status */}
-          <div className="backdrop-glass rounded-2xl p-8 border-gradient-bright mb-16 text-center">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <div className="w-3 h-3 bg-neon-green rounded-full animate-pulse glow"></div>
-              <span className={`font-semibold text-lg ${availabilityStatus.color}`}>
-                {availabilityStatus.status}
-              </span>
-            </div>
-            <p className="text-muted-foreground mb-2">{availabilityStatus.message}</p>
-            <p className="text-sm text-muted-foreground">
-              Response time: <span className="text-primary font-medium">{availabilityStatus.responseTime}</span>
-            </p>
-          </div>
+          
 
           <div className="grid lg:grid-cols-2 gap-16">
             {/* Contact Information */}
@@ -110,21 +92,18 @@ const Contact = () => {
               <div className="backdrop-glass rounded-3xl p-8 border-gradient">
                 <h2 className="text-3xl font-bold mb-8 text-gradient">Let's Connect</h2>
                 <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-                  I'm always interested in discussing new opportunities, 
-                  challenging projects, and innovative ideas. Whether you're 
-                  looking for a backend developer or want to collaborate on 
-                  something exciting, I'd love to hear from you.
+                  I’m always eager to collaborate on meaningful projects and explore new learning opportunities. As a backend-focused developer with a growing frontend skill set, I enjoy building efficient systems and solving real-world problems.
                 </p>
 
                 <div className="space-y-6">
                   <h3 className="font-semibold text-xl text-primary">What I can help with:</h3>
                   <ul className="space-y-3">
                     {[
-                      "Backend API development and architecture",
-                      "Database design and optimization",
-                      "System integration and microservices",
-                      "Performance optimization and scaling",
-                      "Code review and technical consulting"
+                      "Backend development using Python & Django",
+                      "Creating RESTful APIs and system integration",
+                      "Working with databases like MySQL, SQLite, and MongoDBs",
+                      "Frontend development with React.js, HTML, CSS, and Bootstrap",
+                      "Version control and teamwork with Git & GitHub"
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-accent rounded-full mt-2 glow"></div>
@@ -245,7 +224,7 @@ const Contact = () => {
                       <div>
                         <h4 className="font-medium mb-1">Project Timeline</h4>
                         <p className="text-sm text-muted-foreground">
-                          I typically respond within 24 hours and can start most projects within 1-2 weeks.
+                          I typically respond within 24 hours.
                         </p>
                       </div>
                     </div>

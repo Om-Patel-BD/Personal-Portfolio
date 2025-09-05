@@ -7,119 +7,78 @@ import { Badge } from "@/components/ui/badge"
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Backend API",
-      description: "Comprehensive REST API for e-commerce platform with advanced features like inventory management, order processing, payment integration, and real-time notifications using modern Python frameworks.",
-      technologies: ["Django", "PostgreSQL", "Redis", "Celery", "Stripe API", "Docker"],
-      icon: Server,
-      iconColor: "text-primary",
-      features: [
-        "RESTful API Design with OpenAPI documentation",
-        "Stripe & PayPal payment processing integration", 
-        "Real-time order status updates via WebSocket",
-        "Microservices architecture for scalability",
-        "Advanced inventory management system",
-        "Comprehensive admin dashboard"
-      ],
-      github: "#",
-      live: "#",
-      status: "Production",
-      users: "10K+ users"
+      title: "Personal Portfolio",
+  description: "A personal portfolio website developed using Django. It showcases my technical skills, completed projects, and professional experience in a structured and user-friendly manner. Designed to act as a digital resume supporting both academic and professional growth.",
+  technologies: ["Python", "Django", "HTML", "CSS", "JavaScript", "JSON", "Bootstrap"],
+  icon: Server,
+  iconColor: "text-primary",
+  features: [
+    "Responsive and user-friendly design",
+    "Showcases technical skills and completed projects",
+    "Integrated professional experience section",
+    "Digital resume format for academic and career growth",
+    "Dynamic data rendering using Django and JSON",
+    "Bootstrap-based UI for clean styling"
+  ],
+  github: "#",
+  live: "#",
+  status: "Completed" 
     },
     {
-      title: "Task Management System",
-      description: "Collaborative task management platform with user authentication, project management, real-time collaboration features, and detailed analytics dashboard for team productivity insights.",
-      technologies: ["FastAPI", "MongoDB", "WebSocket", "Docker", "AWS", "React"],
-      icon: Database,
-      iconColor: "text-accent",
-      features: [
-        "Real-time collaboration with WebSocket",
-        "Advanced user role management system",
-        "Interactive analytics and reporting dashboard",
-        "Cloud deployment with auto-scaling",
-        "File upload and sharing capabilities",
-        "Mobile-responsive progressive web app"
-      ],
-      github: "#",
-      live: "#",
-      status: "Active Development",
-      users: "5K+ users"
+      title: "FooteeZ - E-Commerce Website",
+  description: "FooteeZ is a fully functional e-commerce platform for shoes, featuring collections for men, women, and unisex categories. The platform provides user-friendly shopping experiences with authentication, cart management, secure payments, and profile handling.",
+  technologies: ["Python", "Django", "HTML", "CSS", "JavaScript", "Bootstrap", "SQLite"],
+  icon: Server,
+  iconColor: "text-primary",
+  features: [
+    "User authentication system with login & signup",
+    "Product catalog with categories for men, women, and unisex",
+    "Add to cart, remove from cart, and update cart functionality",
+    "Razorpay payment gateway integration for secure transactions",
+    "User profile management with order history and details",
+    "Responsive UI with Bootstrap for smooth browsing experience"
+  ],
+  github: "#",
+  live: "#",
+  status: "Production"
     },
     {
-      title: "Data Analytics Pipeline",
-      description: "Automated data processing pipeline for handling large datasets, performing ETL operations, generating business intelligence reports, and providing real-time analytics insights.",
-      technologies: ["Python", "Pandas", "PostgreSQL", "Apache Airflow", "AWS S3", "Grafana"],
-      icon: Zap,
-      iconColor: "text-neon-green",
-      features: [
-        "Automated ETL processing with Apache Airflow",
-        "Interactive data visualization dashboards",
-        "Automated report generation and scheduling",
-        "Cloud storage integration with AWS S3",
-        "Real-time data streaming capabilities",
-        "Machine learning model integration"
-      ],
-      github: "#",
-      live: "#",
-      status: "Completed",
-      users: "Enterprise"
+      title: "Email Management System",
+  description: "An Email Management System that allows users to register, log in, and send emails through a simple and secure interface. Designed with user authentication and email sending functionality, the system demonstrates backend integration and database management.",
+  technologies: ["Python", "Django", "HTML", "CSS", "JavaScript", "Bootstrap", "MySQL"],
+  icon: Server,
+  iconColor: "text-primary",
+  features: [
+    "User authentication with login & signup functionality",
+    "Secure storage of user credentials with MySQL database",
+    "Email sending feature with recipient, subject, and message",
+    "User-friendly interface for composing and sending emails",
+    "Validation for email input fields to ensure reliability",
+    "Responsive frontend built with Bootstrap"
+  ],
+  github: "#",
+  live: "#",
+  status: "Production"
     },
     {
-      title: "Social Media API Gateway",
-      description: "High-performance API gateway for social media platform handling millions of requests, with advanced caching, rate limiting, and microservices orchestration capabilities.",
-      technologies: ["Django", "Redis", "Nginx", "Docker", "Kubernetes", "PostgreSQL"],
-      icon: Globe,
-      iconColor: "text-neon-purple",
-      features: [
-        "High-performance API gateway design",
-        "Advanced rate limiting and throttling",
-        "Microservices orchestration with Kubernetes",
-        "Intelligent caching strategies with Redis",
-        "Load balancing and auto-scaling",
-        "Comprehensive monitoring and logging"
-      ],
-      github: "#",
-      live: "#",
-      status: "Production",
-      users: "1M+ requests/day"
+      title: "POZY – Railway Management System",
+  description: "A full-stack Railway Management System that allows users to search and book trains, manage travel packages, track train status, and provide feedback. Built using modern web technologies, the system provides an efficient and user-friendly platform for train ticket booking and management.",
+  technologies: ["React", "Node.js", "MongoDB", "JavaScript", "HTML", "CSS", "Bootstrap"],
+  icon: Server,
+  iconColor: "text-primary",
+  features: [
+    "User authentication with login & signup",
+    "Search and book trains with seat availability",
+    "Book travel packages and manage bookings",
+    "Real-time train tracking functionality",
+    "User feedback and rating system",
+    "Responsive frontend with React components"
+  ],
+  github: "#",
+  live: "#",
+  status: "Completed"
     },
-    {
-      title: "IoT Device Management",
-      description: "Backend system for managing IoT devices, collecting sensor data, processing real-time metrics, and providing device control interfaces with advanced security features.",
-      technologies: ["Python", "MQTT", "InfluxDB", "FastAPI", "Docker", "Grafana"],
-      icon: Layers,
-      iconColor: "text-neon-cyan",
-      features: [
-        "MQTT broker for device communication",
-        "Time-series data storage with InfluxDB",
-        "Real-time device monitoring and alerts",
-        "Secure device authentication protocols",
-        "Scalable data processing pipeline",
-        "Interactive device control dashboard"
-      ],
-      github: "#",
-      live: "#",
-      status: "Beta",
-      users: "Industrial"
-    },
-    {
-      title: "Financial Trading Bot",
-      description: "Algorithmic trading system with real-time market data processing, risk management, automated trading strategies, and comprehensive backtesting capabilities.",
-      technologies: ["Python", "Django", "Redis", "PostgreSQL", "Celery", "TradingView"],
-      icon: Code2,
-      iconColor: "text-neon-blue",
-      features: [
-        "Real-time market data processing",
-        "Advanced algorithmic trading strategies",
-        "Comprehensive risk management system",
-        "Historical data backtesting framework",
-        "Portfolio performance analytics",
-        "Integration with multiple exchanges"
-      ],
-      github: "#",
-      live: "#",
-      status: "Production",
-      users: "Private"
-    }
+    
   ]
 
   const getStatusColor = (status: string) => {
@@ -177,7 +136,7 @@ const Projects = () => {
                           <Badge className={`text-xs px-3 py-1 border ${getStatusColor(project.status)}`}>
                             {project.status}
                           </Badge>
-                          <span className="text-sm text-muted-foreground">{project.users}</span>
+                          
                         </div>
                       </div>
                     </div>
@@ -236,32 +195,7 @@ const Projects = () => {
             ))}
           </div>
 
-          {/* Project Stats */}
-          <div className="backdrop-glass rounded-3xl p-12 border-gradient-bright mb-20">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-6 text-gradient">Project Impact</h2>
-              <p className="text-xl text-muted-foreground">
-                Real-world results from production applications
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { value: "15+", label: "Projects Delivered", icon: Code2 },
-                { value: "99.9%", label: "Uptime Average", icon: Server },
-                { value: "1M+", label: "API Requests/Day", icon: Globe },
-                { value: "50+", label: "Happy Clients", icon: Zap },
-              ].map((stat, index) => (
-                <div key={index} className="text-center backdrop-glass rounded-2xl p-6 border-gradient">
-                  <div className="inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mb-4 glow">
-                    <stat.icon className="h-6 w-6 text-primary" />
-                  </div>
-                  <div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
 
           {/* Call to Action */}
           <div className="text-center backdrop-glass rounded-3xl p-12 border-gradient-bright">

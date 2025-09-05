@@ -5,95 +5,48 @@ import { Card, CardContent } from "@/components/ui/card"
 const Experience = () => {
   const experiences = [
     {
-      position: "Senior Backend Developer",
-      company: "TechCorp Solutions",
-      companyType: "Enterprise Software",
-      location: "San Francisco, CA",
-      duration: "2022 - Present",
-      type: "Full-time",
-      description: "Lead backend development for enterprise applications serving 100K+ users. Architected microservices infrastructure and implemented robust API solutions with focus on scalability and performance.",
-      achievements: [
-        "Reduced API response time by 60% through database optimization and caching strategies",
-        "Led migration from monolithic to microservices architecture, improving system scalability",
-        "Mentored 5+ junior developers and established team coding standards and best practices",
-        "Implemented CI/CD pipelines reducing deployment time by 80% and improving reliability",
-        "Designed and built real-time notification system handling 1M+ daily messages",
-        "Collaborated with DevOps team to improve infrastructure monitoring and alerting"
-      ],
-      technologies: ["Python", "Django", "PostgreSQL", "Docker", "AWS", "Redis", "Kubernetes"],
-      highlights: {
-        teamSize: "12 developers",
-        budget: "$2M+ projects",
-        impact: "100K+ users"
+  position: "Intern – Python Django Developer",
+  company: "CreArt Solutions Pvt. Ltd.",
+  companyType: "IT Services",
+  location: "India",
+  duration: "15-Day Internship",
+  type: "Internship",
+  description: "Worked as a Python Django Developer Intern, gaining hands-on experience in full-stack web development and real-world project collaboration.",
+  achievements: [
+    "Developed a mini web application using Python, Django, HTML, CSS, and Bootstrap",
+    "Implemented user authentication, CRUD operations, and database management with MySQL",
+    "Gained practical experience in debugging and optimizing Django views",
+    "Collaborated in a team environment, following coding standards and best practices"
+  ],
+  technologies: ["Python", "Django", "HTML", "CSS", "Bootstrap", "MySQL"],
+  highlights: {
+        teamSize: "Made be Self",
+        budget: "None",
+        impact: "A functional web application"
       }
-    },
-    {
-      position: "Backend Developer",
-      company: "StartupX",
-      companyType: "SaaS Startup",
-      location: "Remote",
-      duration: "2020 - 2022",
-      type: "Full-time",
-      description: "Developed scalable backend systems for a growing SaaS platform. Built RESTful APIs, integrated third-party services, and optimized database performance for rapid user growth.",
-      achievements: [
-        "Built core API infrastructure from scratch supporting 10K+ concurrent users",
-        "Integrated payment systems (Stripe, PayPal) and webhook processing for billing",
-        "Optimized database queries reducing average response time from 2s to 200ms",
-        "Implemented automated testing pipeline achieving 95% code coverage",
-        "Designed data analytics pipeline processing 500GB+ daily data",
-        "Contributed to product architecture decisions and technical roadmap planning"
-      ],
-      technologies: ["Python", "FastAPI", "MongoDB", "Docker", "GCP", "Redis", "Celery"],
-      highlights: {
-        teamSize: "8 developers",
-        budget: "$500K+ projects",
-        impact: "10K+ users"
-      }
-    },
-    {
-      position: "Junior Python Developer",
-      company: "CodeFirst Agency",
-      companyType: "Digital Agency",
-      location: "New York, NY",
-      duration: "2018 - 2020",
-      type: "Full-time",
-      description: "Started career developing web applications and learning best practices in software development. Worked on diverse client projects ranging from e-commerce to content management systems.",
-      achievements: [
-        "Contributed to 15+ client projects across various industries and technologies",
-        "Learned Django framework and implemented best practices for scalable applications",
-        "Collaborated with frontend teams to design and implement robust API interfaces",
-        "Participated in agile development processes and regular code reviews",
-        "Developed automated backup and deployment scripts improving team efficiency",
-        "Gained expertise in database design and optimization techniques"
-      ],
-      technologies: ["Python", "Django", "MySQL", "Git", "Linux", "jQuery"],
-      highlights: {
-        teamSize: "5 developers",
-        budget: "$100K+ projects",
-        impact: "20+ clients"
-      }
-    }
+},
+
   ]
 
   const certifications = [
     {
-      name: "AWS Certified Solutions Architect",
-      issuer: "Amazon Web Services",
-      year: "2023",
-      icon: "☁️"
-    },
-    {
-      name: "Python Professional Certification",
-      issuer: "Python Institute",
-      year: "2022",
-      icon: "🐍"
-    },
-    {
-      name: "Docker Certified Associate",
-      issuer: "Docker Inc.",
-      year: "2021",
-      icon: "🐳"
-    }
+    name: "Python Programming Certification",
+    issuer: "Python Institute",
+    year: "2024",
+    icon: "🐍"
+  },
+  {
+    name: "Django Web Development",
+    issuer: "Coursera",
+    year: "2024",
+    icon: "🌐"
+  },
+  {
+    name: "React Frontend Development",
+    issuer: "freeCodeCamp",
+    year: "2023",
+    icon: "⚛️"
+  }
   ]
 
   return (
@@ -240,32 +193,7 @@ const Experience = () => {
             </div>
           </div>
 
-          {/* Career Stats */}
-          <div className="backdrop-glass rounded-3xl p-12 border-gradient-bright">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-6 text-gradient-alt">Career Impact</h2>
-              <p className="text-xl text-muted-foreground">
-                Measurable results from my professional journey
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
-              {[
-                { icon: TrendingUp, value: "5+", label: "Years Experience", color: "text-primary" },
-                { icon: Building, value: "3", label: "Companies", color: "text-accent" },
-                { icon: Users, value: "100K+", label: "Users Served", color: "text-neon-green" },
-                { icon: Target, value: "50+", label: "Projects Delivered", color: "text-neon-purple" },
-              ].map((stat, index) => (
-                <div key={index} className="text-center backdrop-glass rounded-2xl p-6 border-gradient hover:scale-105 transition-all duration-300">
-                  <div className={`inline-flex items-center justify-center w-12 h-12 bg-primary/10 rounded-xl mb-4 glow`}>
-                    <stat.icon className={`h-6 w-6 ${stat.color}`} />
-                  </div>
-                  <div className="text-3xl font-bold text-gradient mb-2">{stat.value}</div>
-                  <div className="text-sm text-muted-foreground">{stat.label}</div>
-                </div>
-              ))}
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>

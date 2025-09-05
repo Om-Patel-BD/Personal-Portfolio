@@ -9,21 +9,36 @@ import {
   Settings,
   Shield,
   Zap,
-  Globe
+  Globe,
+  Monitor,
+  Cylinder,
+  Wrench
 } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 
 const Skills = () => {
   const skillCategories = [
     {
-      title: "Languages & Frameworks",
-      icon: Code2,
+      title: "Frontend",
+      icon: Monitor,
       color: "text-neon-cyan",
       skills: [
-        { name: "Python", level: 95, color: "from-neon-blue to-primary" },
-        { name: "Django", level: 90, color: "from-neon-green to-accent" },
-        { name: "FastAPI", level: 85, color: "from-primary to-neon-cyan" },
-        { name: "Flask", level: 80, color: "from-accent to-neon-purple" },
+        { name: "HTML5", level: 95, color: "from-neon-blue to-primary" },
+        { name: "CSS3", level: 90, color: "from-neon-green to-accent" },
+        { name: "Javascript", level: 52, color: "from-primary to-neon-cyan" },
+        { name: "Bootstrap", level: 80, color: "from-accent to-neon-purple" },
+        { name: "React.js", level: 40, color: "from-neon-blue to-primary" },
+      ]
+    },
+    {
+      title: "Backend",
+      icon: Server,
+      color: "text-neon-purple",
+      skills: [
+        { name: "Python", level: 85, color: "from-neon-cyan to-primary" },
+        { name: "Django", level: 80, color: "from-neon-purple to-accent" },
+        { name: "Node.js", level: 50, color: "from-primary to-neon-blue" },
+        
       ]
     },
     {
@@ -31,65 +46,52 @@ const Skills = () => {
       icon: Database,
       color: "text-neon-green",
       skills: [
-        { name: "PostgreSQL", level: 90, color: "from-neon-blue to-primary" },
-        { name: "MongoDB", level: 80, color: "from-neon-green to-accent" },
-        { name: "Redis", level: 85, color: "from-red-500 to-neon-purple" },
-        { name: "MySQL", level: 85, color: "from-primary to-neon-cyan" },
+        { name: "SQLite", level: 70, color: "from-neon-blue to-primary" },
+        { name: "MongoDB", level: 60, color: "from-neon-green to-accent" },
+        { name: "MySQL", level: 70, color: "from-primary to-neon-cyan" },
       ]
     },
     {
-      title: "DevOps & Cloud",
-      icon: Cloud,
-      color: "text-neon-purple",
-      skills: [
-        { name: "Docker", level: 85, color: "from-neon-cyan to-primary" },
-        { name: "AWS", level: 80, color: "from-neon-purple to-accent" },
-        { name: "Kubernetes", level: 75, color: "from-primary to-neon-blue" },
-        { name: "CI/CD", level: 80, color: "from-accent to-neon-green" },
-      ]
-    },
-    {
-      title: "Tools & Technologies",
-      icon: Settings,
+      title: "Tools",
+      icon: Wrench,
       color: "text-neon-blue",
       skills: [
         { name: "Git", level: 90, color: "from-neon-green to-primary" },
-        { name: "Linux", level: 85, color: "from-neon-purple to-accent" },
-        { name: "Nginx", level: 80, color: "from-primary to-neon-cyan" },
-        { name: "RabbitMQ", level: 75, color: "from-accent to-neon-blue" },
+        { name: "VSCode", level: 85, color: "from-neon-purple to-accent" },
+        { name: "Github", level: 80, color: "from-primary to-neon-cyan" },
       ]
     }
   ]
 
   const expertiseAreas = [
     {
-      icon: Server,
-      title: "API Development",
-      description: "RESTful APIs, GraphQL, WebSocket connections",
-      color: "text-primary",
-      bgColor: "bg-primary/10"
-    },
-    {
-      icon: Shield,
-      title: "Security",
-      description: "Authentication, Authorization, Data encryption",
-      color: "text-accent",
-      bgColor: "bg-accent/10"
-    },
-    {
-      icon: Zap,
-      title: "Performance",
-      description: "Optimization, Caching, Load balancing",
-      color: "text-neon-green",
-      bgColor: "bg-neon-green/10"
-    },
-    {
-      icon: Globe,
-      title: "Architecture",
-      description: "Microservices, Scalable systems, Design patterns",
-      color: "text-neon-purple",
-      bgColor: "bg-neon-purple/10"
-    }
+    icon: Server,
+    title: "Backend Development",
+    description: "Building applications with Python, Django, and Node.js",
+    color: "text-primary",
+    bgColor: "bg-primary/10"
+  },
+  {
+    icon: Database,
+    title: "Database Management",
+    description: "Designing and working with MySQL, SQLite, and MongoDB",
+    color: "text-accent",
+    bgColor: "bg-accent/10"
+  },
+  {
+    icon: Zap,
+    title: "Web Development",
+    description: "Creating responsive UIs with React, HTML, CSS, and Bootstrap",
+    color: "text-neon-green",
+    bgColor: "bg-neon-green/10"
+  },
+  {
+    icon: GitBranch,
+    title: "Version Control",
+    description: "Collaborating using Git, GitHub, and modern workflows",
+    color: "text-neon-purple",
+    bgColor: "bg-neon-purple/10"
+  }
   ]
 
   const SkillBar = ({ skill }: { skill: { name: string; level: number; color: string } }) => (
@@ -177,58 +179,7 @@ const Skills = () => {
               </Card>
             ))}
           </div>
-
-          {/* Featured Technologies */}
-          <div className="backdrop-glass rounded-3xl p-12 border-gradient-bright">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold mb-6 text-gradient">Core Technology Stack</h2>
-              <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-                The powerful combination of technologies I use to build exceptional backend solutions
-              </p>
-            </div>
-            
-            <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-8 gap-6">
-              {[
-                { name: "Python", icon: "🐍", level: "Expert" },
-                { name: "Django", icon: "🎯", level: "Expert" },
-                { name: "PostgreSQL", icon: "🐘", level: "Advanced" },
-                { name: "Docker", icon: "🐳", level: "Advanced" },
-                { name: "AWS", icon: "☁️", level: "Advanced" },
-                { name: "Redis", icon: "🔴", level: "Advanced" },
-                { name: "REST API", icon: "🔗", level: "Expert" },
-                { name: "GraphQL", icon: "⚡", level: "Intermediate" },
-              ].map((tech, index) => (
-                <div 
-                  key={tech.name}
-                  className="backdrop-glass rounded-2xl p-6 border-gradient hover:scale-110 hover:border-gradient-bright transition-all duration-300 group cursor-default text-center"
-                >
-                  <div className="text-4xl mb-4 group-hover:animate-bounce">{tech.icon}</div>
-                  <div className="font-semibold text-foreground mb-2">{tech.name}</div>
-                  <div className="text-xs text-muted-foreground px-2 py-1 bg-secondary/50 rounded-full">
-                    {tech.level}
-                  </div>
-                </div>
-              ))}
-            </div>
-
-            {/* Skills Summary */}
-            <div className="mt-16 text-center">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-                <div className="backdrop-glass rounded-2xl p-6 border-gradient">
-                  <div className="text-3xl font-bold text-gradient mb-2">5+</div>
-                  <div className="text-muted-foreground">Years Experience</div>
-                </div>
-                <div className="backdrop-glass rounded-2xl p-6 border-gradient">
-                  <div className="text-3xl font-bold text-gradient-alt mb-2">20+</div>
-                  <div className="text-muted-foreground">Technologies Mastered</div>
-                </div>
-                <div className="backdrop-glass rounded-2xl p-6 border-gradient">
-                  <div className="text-3xl font-bold text-gradient mb-2">50+</div>
-                  <div className="text-muted-foreground">Projects Completed</div>
-                </div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
     </div>
