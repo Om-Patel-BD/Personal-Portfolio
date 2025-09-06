@@ -106,7 +106,7 @@ const Home = () => {
     className="hover:text-primary transition-all duration-300 hover:scale-110"
   >
     <a
-      href="https://github.com/dashboard"
+      href="https://github.com/Om-Patel-BD"
       target="_blank"
       rel="noopener noreferrer"
     >

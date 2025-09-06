@@ -33,7 +33,7 @@ const Contact = () => {
     {
       icon: Github,
       label: "GitHub",
-      href: "https://github.com/dashboard",
+      href: "https://github.com/Om-Patel-BD",
       username: "@ompatel",
       description: "Check out my open source projects",
       color: "hover:text-neon-cyan"
