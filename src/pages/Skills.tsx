@@ -12,8 +12,14 @@ import {
   Globe,
   Monitor,
   Cylinder,
-  Wrench
+  Wrench,
+  SquareTerminal,
+  Gitlab,
+  GitCommit 
 } from "lucide-react"
+import { FaHtml5, FaCss3Alt, FaReact, FaPython, FaNodeJs, FaBootstrap } from "react-icons/fa";
+import { SiDjango, SiMongodb, SiMysql, SiSqlite } from "react-icons/si";
+
 import { Card, CardContent } from "@/components/ui/card"
 
 const Skills = () => {
@@ -23,22 +29,21 @@ const Skills = () => {
       icon: Monitor,
       color: "text-neon-cyan",
       skills: [
-        { name: "HTML5", level: 95, color: "from-neon-blue to-primary" },
-        { name: "CSS3", level: 90, color: "from-neon-green to-accent" },
-        { name: "Javascript", level: 52, color: "from-primary to-neon-cyan" },
-        { name: "Bootstrap", level: 80, color: "from-accent to-neon-purple" },
-        { name: "React.js", level: 40, color: "from-neon-blue to-primary" },
-      ]
+  { name: "HTML5", icon: FaHtml5 },
+  { name: "CSS3", icon: FaCss3Alt },
+  { name: "Javascript", icon: FaReact },   
+  { name: "Bootstrap", icon: FaBootstrap },
+  { name: "React.js", icon: FaReact },
+]
     },
     {
       title: "Backend",
       icon: Server,
       color: "text-neon-purple",
       skills: [
-        { name: "Python", level: 85, color: "from-neon-cyan to-primary" },
-        { name: "Django", level: 80, color: "from-neon-purple to-accent" },
-        { name: "Node.js", level: 50, color: "from-primary to-neon-blue" },
-        
+        { name: "Python", icon: FaPython },
+        { name: "Django", icon: SiDjango },
+        { name: "Node.js", icon: FaNodeJs },
       ]
     },
     {
@@ -46,9 +51,9 @@ const Skills = () => {
       icon: Database,
       color: "text-neon-green",
       skills: [
-        { name: "SQLite", level: 70, color: "from-neon-blue to-primary" },
-        { name: "MongoDB", level: 60, color: "from-neon-green to-accent" },
-        { name: "MySQL", level: 70, color: "from-primary to-neon-cyan" },
+        { name: "SQLite", icon: SiSqlite },
+        { name: "MongoDB", icon: SiMongodb },
+        { name: "MySQL", icon: SiMysql },
       ]
     },
     {
@@ -56,9 +61,9 @@ const Skills = () => {
       icon: Wrench,
       color: "text-neon-blue",
       skills: [
-        { name: "Git", level: 90, color: "from-neon-green to-primary" },
-        { name: "VSCode", level: 85, color: "from-neon-purple to-accent" },
-        { name: "Github", level: 80, color: "from-primary to-neon-cyan" },
+        { name: "Git", icon: GitCommit },
+        { name: "VSCode", icon: Code2 },
+        { name: "Github", icon: Gitlab },
       ]
     }
   ]
@@ -94,22 +99,12 @@ const Skills = () => {
   }
   ]
 
-  const SkillBar = ({ skill }: { skill: { name: string; level: number; color: string } }) => (
-    <div className="mb-6">
-      <div className="flex justify-between items-center mb-3">
-        <span className="font-medium text-foreground">{skill.name}</span>
-        <span className="text-sm text-muted-foreground font-mono">{skill.level}%</span>
-      </div>
-      <div className="w-full bg-secondary/50 rounded-full h-3 overflow-hidden backdrop-glass">
-        <div 
-          className={`h-3 rounded-full transition-all duration-1000 ease-out bg-gradient-to-r ${skill.color} glow relative`}
-          style={{ width: `${skill.level}%` }}
-        >
-          <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent animate-gradient-shift"></div>
-        </div>
-      </div>
-    </div>
-  )
+  const SkillBar = ({ skill }: { skill: { name: string; icon: any } }) => (
+  <div className="flex items-center gap-4 py-2 px-3 rounded-lg border border-transparent hover:border-primary hover:bg-primary/10 hover:text-primary transition-all duration-300 cursor-pointer hover:scale-105 hover:shadow-lg hover:shadow-primary/20">
+    <skill.icon className="h-7 w-7 text-primary transition-colors duration-300" />
+    <span className="font-medium text-foreground text-lg">{skill.name}</span>
+  </div>
+)
 
   return (
     <div className="min-h-screen pt-24 pb-20 relative overflow-hidden">

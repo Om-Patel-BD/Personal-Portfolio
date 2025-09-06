@@ -48,7 +48,7 @@ const Home = () => {
                   <span className="inline-block">Crafting robust </span>
                   <span className="text-primary font-semibold"> Python </span>
                   <span className="inline-block">  & </span>
-                  <span className="text-accent font-semibold"> Django </span>
+                  <span className="text-primary font-semibold"> Django </span>
                   <span className="inline-block">  solutions</span>
                 </div>
                 
@@ -106,7 +106,7 @@ const Home = () => {
     className="hover:text-primary transition-all duration-300 hover:scale-110"
   >
     <a
-      href="https://github.com/Om-Patel-BD"
+      href="https://github.com/Om-Patel-BDz"
       target="_blank"
       rel="noopener noreferrer"
     >
