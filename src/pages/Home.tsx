@@ -53,7 +53,7 @@ const Home = () => {
                 </div>
                 
                 <p className="text-base sm:text-lg text-muted-foreground leading-relaxed max-w-2xl mx-auto lg:mx-0">
-                  I design and build <span className="text-primary font-medium"> scalable backend systems </span> using Python and Django. My work focuses on creating <span className="text-foreground font-medium"> robust APIs and high-performance databases </span> that ensure smooth and reliable web applications. With clean coding practices and a focus on efficiency, I develop solutions that are secure, maintainable, and ready to scale with future growth.
+                  I design and build <span className="text-primary font-medium"> backend and full-stack web applications </span> using Python, Django, and modern web technologies. My work focuses on developing <span className="text-foreground font-medium"> secure authentication systems, database-driven applications, and responsive user interfaces </span> that provide smooth and user-friendly experiences. With a strong interest in learning and problem-solving, I create efficient, maintainable, and real-world software solutions.
                 </p>
               </div>
 
@@ -76,7 +76,7 @@ const Home = () => {
                   className="w-full sm:w-auto px-8 py-3 text-lg font-medium hover:scale-105 transition-all duration-300"
                 >
                   <a
-                     href="/resume.pdf"
+                     href="/Om_Resume.pdf"
                     download="Om_Patel_Resume.pdf"   // file name when downloaded
                     className="flex items-center"
                 >

@@ -6,6 +6,25 @@ import { Badge } from "@/components/ui/badge"
 
 const Projects = () => {
   const projects = [
+
+        {
+      title: "EduSphere - Smart Academic Intelligence",
+  description: "A full-stack Educational Management System that allows Admins, Teachers, and Students to manage academic activities efficiently. The platform provides secure role-based access, attendance management, assignment handling, and student-teacher data management through dedicated dashboards. Built using modern web technologies, the system offers a secure and user-friendly environment for educational operations.  ",
+  technologies: ["Python", "Django", "MySQL", "JavaScript", "HTML", "CSS", "Bootstrap"],
+  icon: Server,
+  iconColor: "text-primary",
+  features: [
+    "User authentication with login & signup",
+    "Separate dashboards for Admin, Teacher, and Student",
+    "Attendance & Marks management and tracking system",
+    "Assignment creation and submission handling",
+    "Student and teacher data management",
+    "Responsive and user-friendly interface"
+  ],
+  github: "#",
+  live: "#",
+  status: "Production"
+    },
     {
       title: "Personal Portfolio",
   description: "A personal portfolio website developed using Django. It showcases my technical skills, completed projects, and professional experience in a structured and user-friendly manner. Designed to act as a digital resume supporting both academic and professional growth.",
@@ -58,27 +77,8 @@ const Projects = () => {
   ],
   github: "#",
   live: "#",
-  status: "Production"
-    },
-    {
-      title: "POZY – Railway Management System",
-  description: "A full-stack Railway Management System that allows users to search and book trains, manage travel packages, track train status, and provide feedback. Built using modern web technologies, the system provides an efficient and user-friendly platform for train ticket booking and management.",
-  technologies: ["React", "Node.js", "MongoDB", "JavaScript", "HTML", "CSS", "Bootstrap"],
-  icon: Server,
-  iconColor: "text-primary",
-  features: [
-    "User authentication with login & signup",
-    "Search and book trains with seat availability",
-    "Book travel packages and manage bookings",
-    "Real-time train tracking functionality",
-    "User feedback and rating system",
-    "Responsive frontend with React components"
-  ],
-  github: "#",
-  live: "#",
   status: "Completed"
-    },
-    
+    },   
   ]
 
   const getStatusColor = (status: string) => {
@@ -175,55 +175,11 @@ const Projects = () => {
                     </div>
                   </div>
                 </CardContent>
-
-                <CardFooter className="flex gap-4 pt-6">
-                  <Button 
-                    variant="outline" 
-                    className="flex-1 hover:bg-primary hover:text-primary-foreground transition-colors border-gradient"
-                  >
-                    <Github className="h-4 w-4 mr-2" />
-                    Source Code
-                  </Button>
-                  <Button 
-                    className="flex-1 bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity glow"
-                  >
-                    <ExternalLink className="h-4 w-4 mr-2" />
-                    Live Demo
-                  </Button>
-                </CardFooter>
               </Card>
             ))}
           </div>
 
-          
-
-          {/* Call to Action */}
-          <div className="text-center backdrop-glass rounded-3xl p-12 border-gradient-bright">
-            <h3 className="text-3xl font-bold mb-6 text-gradient-alt">
-              Interested in Working Together?
-            </h3>
-            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-              I'm always excited to take on new challenges and build innovative solutions. 
-              Let's discuss how I can help bring your project to life.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button 
-                size="lg"
-                className="bg-gradient-to-r from-primary to-accent hover:opacity-90 transition-opacity glow-intense px-8"
-              >
-                View All Projects
-                <ExternalLink className="h-4 w-4 ml-2" />
-              </Button>
-              <Button 
-                variant="outline" 
-                size="lg"
-                className="border-gradient hover:bg-secondary/50 transition-colors px-8"
-              >
-                Get In Touch
-                <Github className="h-4 w-4 ml-2" />
-              </Button>
-            </div>
-          </div>
+        
         </div>
       </div>
     </div>

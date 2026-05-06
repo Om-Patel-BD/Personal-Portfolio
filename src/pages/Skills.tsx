@@ -33,7 +33,6 @@ const Skills = () => {
   { name: "CSS3", icon: FaCss3Alt },
   { name: "Javascript", icon: FaReact },   
   { name: "Bootstrap", icon: FaBootstrap },
-  { name: "React.js", icon: FaReact },
 ]
     },
     {
@@ -43,7 +42,7 @@ const Skills = () => {
       skills: [
         { name: "Python", icon: FaPython },
         { name: "Django", icon: SiDjango },
-        { name: "Node.js", icon: FaNodeJs },
+        { name: "FastAPI", icon: FaNodeJs },
       ]
     },
     {
@@ -52,7 +51,7 @@ const Skills = () => {
       color: "text-neon-green",
       skills: [
         { name: "SQLite", icon: SiSqlite },
-        { name: "MongoDB", icon: SiMongodb },
+        { name: "PostgreSQL", icon: SiMongodb },
         { name: "MySQL", icon: SiMysql },
       ]
     },
@@ -72,21 +71,21 @@ const Skills = () => {
     {
     icon: Server,
     title: "Backend Development",
-    description: "Building applications with Python, Django, and Node.js",
+    description: "Building applications with Python, Django, and FastAPI",
     color: "text-primary",
     bgColor: "bg-primary/10"
   },
   {
     icon: Database,
     title: "Database Management",
-    description: "Designing and working with MySQL, SQLite, and MongoDB",
+    description: "Designing and working with MySQL, PostgreSQL",
     color: "text-accent",
     bgColor: "bg-accent/10"
   },
   {
     icon: Zap,
     title: "Web Development",
-    description: "Creating responsive UIs with React, HTML, CSS, and Bootstrap",
+    description: "Creating responsive UIs with HTML, CSS, JavaScript and Bootstrap",
     color: "text-neon-green",
     bgColor: "bg-neon-green/10"
   },

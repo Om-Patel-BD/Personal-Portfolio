@@ -92,7 +92,7 @@ const About = () => {
                   Specialized in software engineering with focus on backend systems, database management, 
                   and distributed computing. 
                 </p>
-                <p className="text-primary font-medium"> CGPA: 8.41 </p>
+                <p className="text-primary font-medium"> CGPA: 8.43 </p>
               </div>
             </div>
           </div>

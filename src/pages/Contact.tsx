@@ -92,7 +92,7 @@ const Contact = () => {
               <div className="backdrop-glass rounded-3xl p-8 border-gradient">
                 <h2 className="text-3xl font-bold mb-8 text-gradient">Let's Connect</h2>
                 <p className="text-muted-foreground mb-8 leading-relaxed text-lg">
-                  I’m always eager to collaborate on meaningful projects and explore new learning opportunities. As a backend-focused developer with a growing frontend skill set, I enjoy building efficient systems and solving real-world problems.
+                 I’m always eager to work on real-world projects and improve my technical skills. As a backend-focused developer with knowledge of full-stack development, I enjoy building secure, scalable, and user-friendly applications while continuously learning modern technologies.
                 </p>
 
                 <div className="space-y-6">
@@ -101,8 +101,8 @@ const Contact = () => {
                     {[
                       "Backend development using Python & Django",
                       "Creating RESTful APIs and system integration",
-                      "Working with databases like MySQL, SQLite, and MongoDBs",
-                      "Frontend development with React.js, HTML, CSS, and Bootstrap",
+                      "Working with databases like MySQL & PostgreSQL",
+                      "Frontend development with HTML, CSS, Javascript and Bootstrap",
                       "Version control and teamwork with Git & GitHub"
                     ].map((item, index) => (
                       <li key={index} className="flex items-start gap-3">
@@ -179,14 +179,14 @@ const Contact = () => {
                     <div>
                       <label className="block text-sm font-medium mb-3 text-foreground">First Name</label>
                       <Input 
-                        placeholder="John" 
+                        placeholder="Om" 
                         className="backdrop-glass border-gradient focus:border-gradient-bright"
                       />
                     </div>
                     <div>
                       <label className="block text-sm font-medium mb-3 text-foreground">Last Name</label>
                       <Input 
-                        placeholder="Doe" 
+                        placeholder="Patel" 
                         className="backdrop-glass border-gradient focus:border-gradient-bright"
                       />
                     </div>
@@ -196,7 +196,7 @@ const Contact = () => {
                     <label className="block text-sm font-medium mb-3 text-foreground">Email Address</label>
                     <Input 
                       type="email" 
-                      placeholder="john@example.com" 
+                      placeholder="om@example.com" 
                       className="backdrop-glass border-gradient focus:border-gradient-bright"
                     />
                   </div>
@@ -204,7 +204,7 @@ const Contact = () => {
                   <div>
                     <label className="block text-sm font-medium mb-3 text-foreground">Project Type</label>
                     <Input 
-                      placeholder="e.g., API Development, Database Design, Full Backend" 
+                      placeholder="e.g., Database Design, Full Backend" 
                       className="backdrop-glass border-gradient focus:border-gradient-bright"
                     />
                   </div>
@@ -247,7 +247,7 @@ const Contact = () => {
                       href="mailto:om.patel@email.com" 
                       className="text-primary hover:underline font-medium"
                     >
-                      om.patel@email.com
+                      contact.ompatel03@gmail.com
                     </a>
                   </p>
                 </div>
